@@ -3,6 +3,42 @@
 #define FALSE 0
 typedef int BOOLEAN;
 
+
+int even1s(char *p) {
+  int evenCounter=0;
+   while (*p != '\0'){
+    if(*p=='1')
+        {evenCounter++;}
+        p++;
+    }
+
+  if(evenCounter % 2 == 0) {
+    return 1;
+  } else if(evenCounter%2!=0) {
+    return 0;
+  }}
+
+  //0s parity
+  int even0s(char *c){
+  int zeroCounter = 0;
+   while (*c != '\0'){
+        if(*c=='0')
+        {zeroCounter++;}
+        c++;
+    }
+
+  if(zeroCounter % 2 == 0) {
+    return 1;
+  } else if(zeroCounter%2!=0) {
+    return 0;
+  }}
+
+  //d
+  int even1sAnd0s(char *x){
+      if(even1s(x)==1&&even0s(x)==1){
+        return 1;
+      }else return 0;}
+
 //find if a string is exactly 'ab'
 
 BOOLEAN findChar(char **a, char c) {
