@@ -3,6 +3,12 @@
 #define FALSE 0
 typedef int BOOLEAN;
 
+//helper function for c d e
+int match_char(char **inp, char target) {
+ while (**inp != target && **inp != '\0'){
+ (*inp)++;}
+ return (**inp != '\0');
+}
 
 int even1s(char *p) {
   int evenCounter=0;
