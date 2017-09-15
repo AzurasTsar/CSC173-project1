@@ -10,6 +10,28 @@ int match_char(char **inp, char target) {
  return (**inp != '\0');
 }
 
+//e
+int matchPrik(char *in) {
+ if(match_char(&in, 'p') &&
+ match_char(&in, 'r') &&
+ match_char(&in, 'i') &&
+ match_char(&in, 'k')==1){
+ return 1;}
+ else{
+ return 0;
+    }
+}
+
+//alternate e
+int evenAs(char *p) {
+  int evenCounter=0;
+   while (*p != '\0'){
+    if(*p=='a'||*p=='A')
+        {evenCounter++;}
+        p++;
+    }
+
+
 int even1s(char *p) {
   int evenCounter=0;
    while (*p != '\0'){
